@@ -953,3 +953,7 @@ ul.places li a{font-size:16px!important; padding:  2px 2px!important;}
 	
 }
 
+.staffing-sub-menu li #judge-staffing:hover, .staffing-sub-menu li #judge-managed:hover{
+color: #222 !important;
+background: transparent !important;
+}
