@@ -1,0 +1,14 @@
+.fa-caret-right{
+  transition: all .4s ease;
+}
+.active .fa-caret-right{
+  transform: rotate(90deg);
+}
+
+// Pen decoration
+body{
+  background-color: #f5f5f5;
+}
+.panel-title a{
+  text-decoration: none;
+}

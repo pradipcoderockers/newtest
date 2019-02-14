@@ -1,0 +1,18 @@
+{
+    "mysql":{
+		"database":"",
+		"username":"",
+		"password":"",
+		"host":""
+	},
+	"mongo":{
+		"connectionString": "",
+		"connectionOptions": "{ native_parser: true}"
+	},
+	"port":8000,
+	"ssl": false,
+	"readPreference": "secondary",
+	"secret": "AppyConnectIndiaOffice",
+	"encodeToken":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZWVyZW5kcmEiOiJkZXZlbmRyYSIsImlhdCI6MTQ3Mzg1MDYwNH0.YoeHbbF_GQdj1bvMwHzJU0R0KXyij11JfhL2HgyMEyg",
+	"baseUrl": "http://localhost:8000"	
+}

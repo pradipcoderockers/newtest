@@ -1,0 +1,32 @@
+<header class="header">
+		<nav id="topNavAppy" class="navbar navbar-default navbar-fixed-top header-sec " role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#deappypie-nav"> <span class="sr-only">Toggle navigation</span>  <span class="icon-bar"></span>  <span class="icon-bar"></span>  <span class="icon-bar"></span> 
+					</button>
+					<a class="navbar-brand appypieLogo" href="/">
+						<img alt="Free App Builder" src="https://d2wuvg8krwnvon.cloudfront.net/wp/en/images/logo_new.png" width="45" height="51">
+					</a>
+					<div class="nav navbar-nav head-title">Appy Pie | Developers</div>
+				</div>
+				<div class="menu-new-home-landing-page-container">
+					<div class="collapse navbar-collapse" id="deappypie-nav">
+						<div class="menu-content-container">
+							<ul class="nav navbar-nav s-nav pull-right flip de-home-menu">
+								<li><a href="/docs/overview"><span>API Docs</span></a>
+								</li>
+								<li> 
+								<% if(local.user){ %>
+								<a href="/logout"><span>Logout</span></a>
+								<% } else {  %>
+								<a href="/login"><span>Developer Login</span></a>
+								<% } %>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
