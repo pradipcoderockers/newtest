@@ -54,16 +54,17 @@ mongoose.connect(mongoUri, {
 module.exports = function(app, passport) {
 
 	app.get('/',menuListeMiddleware, function(req, res,next) {
-		res.render('home.ejs',{menu:req.menu});
+		
+		
 		CMSSchemaModal.findOne({'type':'about-us'}, function(err, pageData)
 			{
 				if (err){
 					   
-						res.render('home.ejs',{menuList:req.menu,pageData:err});
+						res.render('index.ejs',{menuList:req.menu,pageData:err});
 					}
 					else
 					{
-						res.render('home.ejs',{menuList:req.menu,pageData:pageData});
+						res.render('index.ejs',{menuList:req.menu,pageData:pageData});
 					}
 				
 			});
