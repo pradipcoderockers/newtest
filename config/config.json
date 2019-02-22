@@ -6,7 +6,7 @@
 		"host":""
 	},
 	"mongo":{
-		"connectionString": "",
+		"connectionString": "mongodb://pradip:Hancock_11@cluster0-shard-00-00-ej1vj.mongodb.net:27017,cluster0-shard-00-01-ej1vj.mongodb.net:27017,cluster0-shard-00-02-ej1vj.mongodb.net:27017/awslambda?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true",
 		"connectionOptions": "{ native_parser: true}"
 	},
 	"port":8000,

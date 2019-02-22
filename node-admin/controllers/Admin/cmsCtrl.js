@@ -18,7 +18,7 @@ exports.add = (req, res, next) => {
 		});
 		return;
 	}	 
-    
+    req.body.menu_type = req.body.menu_type.key;
     let cms = new CMS(req.body);
     cms.save()
     .then(result => res.json({success: true}))
@@ -36,8 +36,8 @@ exports.edit = (req, res, next) => {
 		return;
 	}	 
     
-    
-    CMS.update({_id: req.body._id},{$set: { title: req.body.title, type: req.body.type, description: req.body.description }}, 
+    req.body.menu_type = req.body.menu_type.key;
+    CMS.update({_id: req.body._id},{$set: {menu_description:req.body.menu_description,menu_type:req.body.menu_type,meta_title: req.body.meta_title,meta_description: req.body.meta_description,meta_keywords:req.body.meta_keywords, title: req.body.title, type: req.body.type, description: req.body.description }}, 
     	function (error, result) {
     		if(error){
     			res.json({errors: error});
@@ -70,7 +70,6 @@ exports.view = (req, res, next) => {
 };
 
 exports.list = (req, res, next) => {
-	console.log(req.body);
 	let operation = {};
 	if( req.body.title ){
 		operation.title = {$regex: new RegExp(`${req.body.title}`), $options:"im"};

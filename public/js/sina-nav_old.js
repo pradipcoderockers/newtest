@@ -4,7 +4,6 @@
  * Version: 2.0
  * Author: shaonsina
  */
-
 (function ($) {
 	'use strict';
 	$.fn.sinaNav = function () {
@@ -369,7 +368,7 @@ $(function () {
 					      $('#'+id+"_box").show()
 					    });
 						
-						 $('#judge-staffing').addClass('staffing-sub-menu_activeBg');
+						
 						 $('#staff_dir_1_box').show();
 						 $('#staff_dir_1').addClass('staffing-sub-menu_activeBg');
 						 $('#staff_dir_1').add('#staff_it_1').add('#staff_health_1').add('#staff_eng_1').add('#staff_fin_1').add('#staff_lif_1').add('#staff_msp_1').add('#staff_rpo_1').add('#staff_cus_1').add('#staff_tech_1').add('#staff_learn_1').on('mouseover', function(){
@@ -406,32 +405,9 @@ $(function () {
 					    
 					    $('#judge-managed').click(function(){
 							
-							  $('.sub-menu-staffing').addClass('menu-hide');
-							  $('.sub-menu-managed').removeClass('menu-hide');
-							  $('#staff_dir_1').removeClass('staffing-sub-menu_activeBg');
-							  $('#staff_lif_1').removeClass('staffing-sub-menu_activeBg');
-							  $('#staff_health_1').removeClass('staffing-sub-menu_activeBg');
-							  $('#staff_eng_1').removeClass('staffing-sub-menu_activeBg');
-							  $('#staff_fin_1').removeClass('staffing-sub-menu_activeBg');
-							  $('#staff_it_1').removeClass('staffing-sub-menu_activeBg');
-							  $('#staff_msp_1').removeClass('staffing-sub-menu_activeBg');
-							  $('#staff_rpo_1').removeClass('staffing-sub-menu_activeBg');
-							  $('#judge-staffing').removeClass('staffing-sub-menu_activeBg');
-							  $('#judge-managed').addClass('staffing-sub-menu_activeBg');
-							 
-							  $('#staff_cus_1_box').show()  
-							  $('#staff_cus_1').addClass('staffing-sub-menu_activeBg');
-						})
-						
-						$('#judge-staffing').click(function(){
-							
-							  $('#judge-managed').removeClass('staffing-sub-menu_activeBg');
-							  $('#judge-staffing').addClass('staffing-sub-menu_activeBg');
-							  $('.sub-menu-managed').addClass('menu-hide');
-							  $('.sub-menu-staffing').removeClass('menu-hide');
-							  $('#staff_cus_1').removeClass('staffing-sub-menu_activeBg');
-							  $('#staff_tech_1').removeClass('staffing-sub-menu_activeBg');
-							  $('#staff_learn_1').removeClass('staffing-sub-menu_activeBg');
+							 $('.sub-menu-managed').removeClass('menu-hide');
+							 $('#staff_cus_1_box').show()  
+							 $('#staff_cus_1').addClass('staffing-sub-menu_activeBg');
 						})
 						
 						

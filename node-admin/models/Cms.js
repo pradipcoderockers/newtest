@@ -7,12 +7,27 @@ const
     Schema          = mongoose.Schema,
 
 CMSSchema   = new Schema({
-    title: {
+    meta_title: {
+        type: String,
+    },
+     meta_description: {
+        type: String,
+    },
+     meta_keywords: {
+        type: String,
+    },
+     title: {
         type: String,
     },
     type: {
         type: String,
     },
+    menu_type: {
+        type: String,
+    },
+    menu_description:{
+		type: String,
+	},
     description: {
         type: String
     },
