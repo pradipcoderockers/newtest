@@ -371,6 +371,18 @@ $(function () {
 						
 						 $('#judge-staffing').addClass('staffing-sub-menu_activeBg');
 						 $('#staff_dir_1_box').show();
+						 
+						  $('#staff_cus_1_box').hide();
+						  $('#staff_tech_1_box').hide();
+						  $('#staff_learn_1_box').hide();
+						  $('#staff_lif_1_box').hide();
+						  $('#staff_health_1_box').hide();
+						  $('#staff_eng_1_box').hide();
+						  $('#staff_fin_1_box').hide();
+						  $('#staff_it_1_box').hide();
+						  $('#staff_msp_1_box').hide();
+						  $('#staff_rpo_1_box').hide();
+						 
 						 $('#staff_dir_1').addClass('staffing-sub-menu_activeBg');
 						 $('#staff_dir_1').add('#staff_it_1').add('#staff_health_1').add('#staff_eng_1').add('#staff_fin_1').add('#staff_lif_1').add('#staff_msp_1').add('#staff_rpo_1').add('#staff_cus_1').add('#staff_tech_1').add('#staff_learn_1').on('mouseover', function(){
 					      var id = $(this).attr('id');
@@ -449,7 +461,6 @@ $(function () {
 							  $('#staff_cus_1_box').hide();
 							  $('#staff_tech_1_box').hide();
 							  $('#staff_learn_1_box').hide();
-							  
 							  $('#staff_lif_1_box').hide();
 							  $('#staff_health_1_box').hide();
 							  $('#staff_eng_1_box').hide();
