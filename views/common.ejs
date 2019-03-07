@@ -106,50 +106,102 @@
       <!--==========================
          Intro Section
          ============================-->
-      <section id="intro">
-         <div class="intro-container">
-            <div id="introCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-               <ol class="carousel-indicators d-none">
-               </ol>
-               <div class="carousel-inner" role="listbox">
-                  <div class="carousel-item active">
-                     <div class="carousel-background"><img src="img/banner-1.jpg" alt=""></div>
-                     <div class="carousel-container">
-                        <div class="carousel-content">
-                           <div class="col-md-6 float-left think">
-                              50 YEARS<br>
-                              OF SERVICE<br>
-                              <div> Experience Matters to our thousand<br>of clients. Millions of candidates<br>with countless success stories. <br><br>
-                                 <a href="#"><img src="img/learn-more-button.png" width="278" height="63" alt=""/></a> 
-                              </div>
-                           </div>
-                           <div class="col-md-6 float-left d-none d-lg-block"><img src="img/mask.png" alt="" class="img-fluid invisible"></div>
-                        </div>
-                     </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon ion-chevron-right color" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                  </a>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- #intro -->
-       <section id="about-banner"  class="wow fadeIn">
-         <div class="container">
-            <div class="counters"><span class="small-about"><%- pageData.description -%></span>
-            </div>
-         </div>
-      </section>
-   
+         <%- pageData.description -%>
       <!--==========================
          Footer
          ============================-->
+          <section id="contact-section" class="pb-5" >
+         <div class="container col-lg-10">
+            <div class="sectionWrapper">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <div class="sectionlgTitletw sectionTitle">
+                           <h1 class="whiteTxt">Contact Us</h1>
+                           <p>If you would like to contact someone by phone, fax<br>
+                              or post and you don't know the address, please<br>
+                              consult our world wide branch directory
+                           </p>
+                        </div>
+                        <!-- end of sectonlgTitletw -->
+                     </div>
+                     <!-- end of col12 -->
+                  </div>
+                  <!-- end of row -->
+                  <div class="row">
+                     <div class="col-md-8 noPaddingRight">
+                        <div class="contactWrapper">
+                           <div class="sectionlgTitle">
+                              <h2>Send us a Message</h2>
+                           </div>
+                           <!-- end of sectonlgTitletw -->
+                           <div id="message"></div>
+                           <form method="post" action="mail.php" name="cform" id="cform" class="sendMessage formArea fromStyle2 clearfix">
+                              <ul class="row contactFormArea">
+                                 <li class="col-xs-12 col-sm-6 paddrtl">
+                                    <input value="Full Name.." onblur="if(this.value=='')this.value='Full Name..'" onfocus="if(this.value=='Full Name..')this.value=''" name="name" id="FullName" type="text" required="">
+                                 </li>
+                                 <li class="col-xs-12 col-sm-6 paddlft">
+                                    <input value="Email.." onblur="if(this.value=='')this.value='Email..'" onfocus="if(this.value=='Email..')this.value=''" name="email" id="Email" type="email" required="">
+                                 </li>
+                                 <li class="col-xs-12 col-sm-6 paddrtl">
+                                    <input value="Phone.." onblur="if(this.value=='')this.value='Phone..'" onfocus="if(this.value=='Phone..')this.value=''" name="mobile" id="Phone" type="text" required="">
+                                 </li>
+                                 <li class="col-xs-12 col-sm-6 paddlft">
+                                    <input value="Website.." onblur="if(this.value=='')this.value='Website..'" onfocus="if(this.value=='Website..')this.value=''" id="Wbsite" type="text">
+                                 </li>
+                                 <li class="col-xs-12 col-sm-12 MessageSubmit">
+                                    <textarea name="message" id="comments" placeholder="Write.."></textarea>
+                                 </li>
+                                 <li class="col-xs-12 col-sm-12 submit-button">
+                                    <button type="submit" value="Submit" >Submit</button>
+                                 </li>
+                              </ul>
+                              <!-- end of ul -->
+                              <div id="simple-msg"></div>
+                           </form>
+                           <!-- end of conform -->
+                        </div>
+                        <!-- end of contactWrapper -->
+                     </div>
+                     <!-- end of col8  -->
+                     <div class="col-md-4 noPaddingLeft">
+                        <div class="contactInform deepBlueSection clearfix">
+                           <h2>Contact Info</h2>
+                           <ul class="getInTouchList">
+                              <li>
+                                 <img src="img/location-new.png" alt="Round Location">
+                                 <span class="text">151 S. Warner Rd  Wayne, PA 19087</span>
+                              </li>
+                              <!-- end of li -->
+                              <li>
+                                 <img src="img/phone-icon-new.png" alt="Tab Icon">
+                                 <span class="text">(800) 650-0035</span>
+                              </li>
+                              <!-- end of li -->
+                              <li>
+                                 <img src="img/mail-icon-new.png" width="33" alt="Mail Box Icon">
+                                 <span class="text">info@judge.com</span>
+                              </li>
+                              <!-- end of li -->
+                           </ul>
+                           <!-- end of getInTouchList -->
+                           <ul class="socialNav contactInformSocial">
+                              <li class="facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                              <li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                              <li class="instagram"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                           </ul>
+                        </div>
+                        <!-- end of contactInform  -->
+                     </div>
+                     <!-- end of col4  -->
+                  </div>
+                  <!-- end of row -->
+               </div>
+               <!-- end of container -->
+            </div>
+         </div>
+      </section>
        <%- include('footer'); -%>
    </body>
 </html>

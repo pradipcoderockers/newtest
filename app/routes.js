@@ -69,6 +69,24 @@ module.exports = function(app, passport) {
 				
 			});
 	});
+	
+	app.get('/consulting',menuListeMiddleware, function(req, res,next) {
+		
+		
+		CMSSchemaModal.findOne({'type':'about-us'}, function(err, pageData)
+			{
+				if (err){
+					   
+						res.render('consulting.ejs',{menuList:req.menu,pageData:err});
+					}
+					else
+					{
+						res.render('consulting.ejs',{menuList:req.menu,pageData:pageData});
+					}
+				
+			});
+	});
+	
 	app.get('/:type',menuListeMiddleware, function(req, res) {
 	    if(req.params)
 	    {
@@ -79,7 +97,7 @@ module.exports = function(app, passport) {
 						res.render('home.ejs',{menuList:req.menu,pageData:err});
 					}
 					else
-					{ console.log(req.menu.about);
+					{ 
 						res.render('common.ejs',{menuList:req.menu,pageData:pageData});
 					}
 				
