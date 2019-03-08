@@ -8,7 +8,8 @@
       <meta content="" name="description">
       <!-- Favicons -->
       	<%- include('head'); -%>
-   </head>
+      	 <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	   </head>
    <body id="top" class="homeStyleSix style6">
       <header id="header" class="m-0 p-0">
          <div class="col-lg-12 col-md-12 m-0 p-0 d-none d-sm-block">
@@ -62,10 +63,6 @@
                
                <!-- .container -->
                <div id="logo1" class="pull-right mr-5">
-                  <div class="row years">
-                     <div  class="col-md-6 col-sm-6 text-center mt-4"> <img src="img/50.png" width="100%" alt=""/></div>
-                     <div class="col-md-6 col-sm-6 mt-3 pt-3" style="border-left:1px solid #fff"><iframe src="https://free.timeanddate.com/countdown/i6lssfsx/n198/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cacfff/cpcfff/pct/tcfff/fn3/fs100/szw448/szh189/tacfff/tptTime%20since%20Event%20started%20in/tpcfff/macfff/mpcfff/iso2020-01-09T00:00:00/pd3" allowTransparency="true" frameborder="0" width="163" height="62"></iframe></div>
-                  </div>
                </div>
             </nav>
          </div>
@@ -102,6 +99,7 @@
             .menu-hide{ display: none;}
          </style>
       </header>
+      <div id="consulting"> 
       <!-- #header -->
       <!--==========================
          Intro Section
@@ -110,8 +108,8 @@
       <!--==========================
          Footer
          ============================-->
-          <section id="contact-section" class="pb-5" >
-         <div class="container col-lg-10">
+         <section id="contact-section" class="pb-5 section" >
+          <div class="container col-lg-10">
             <div class="sectionWrapper">
                <div class="container">
                   <div class="row">
@@ -203,5 +201,13 @@
          </div>
       </section>
        <%- include('footer'); -%>
+       </div>
+       <script type="text/javascript" src="js/fullpage.js"></script>
+	  <script type="text/javascript">
+		var myFullpage = new fullpage('#consulting', {
+			verticalCentered: false,
+			css3:false
+		});
+	  </script>
    </body>
 </html>

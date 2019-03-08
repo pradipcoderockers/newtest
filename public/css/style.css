@@ -1065,7 +1065,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Contact Section
 --------------------------------*/
 #contact-section {
-  background: url("../img/contact-bg.png") center top no-repeat fixed;
+  background: url("../img/contact-bg.png") center top no-repeat;
   padding: 60px 0 0 0;
   position: relative;
 }
@@ -1922,6 +1922,7 @@ ul.innovate-list{line-height: 24px; margin-left: 10px; }
     top: 50%;
     right: 14px;
     margin-top: -10px;
+	color:#fff;
 }
 .consulting-box.left-Arrow{
 	    float: right;
@@ -1948,8 +1949,18 @@ ul.innovate-list{line-height: 24px; margin-left: 10px; }
     padding: 60px 0 0 0;
     position: relative;
     overflow: hidden;
+	
 }
-
+.section{
+	display: table;
+    table-layout: fixed;
+    width: 100%
+}
+.middleDiv{
+	display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
 .bg-ribbon{
 	position: relative;
 z-index: 99;
@@ -1961,7 +1972,7 @@ z-index: 99;
     top: -5%;
     left: 0;
     width: 100%;
-    height: 1600px;
+    height: 1900px;
     background-color: rgba(237,139,0,.8);
     -webkit-transform: skewY(-61deg);
     transform: skewY(-61deg);
