@@ -1,227 +1,1224 @@
-<!-- Collect the nav links, forms, and other content for toggling -->
-<div class="collapse navbar-collapse" id="navbar-menu">
- <ul class="sina-menu sina-menu-right" data-in="fadeInLeft" data-out="fadeInOut">
-	<li class="dropdown menu-item-has-mega-menu">
-	   <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT</a>
-	   <div class="mega-menu dropdown-menu">
-		  <ul class="mega-menu-row" role="menu">
-			 <li class="mega-menu-col col-md-4 order-3 l-menu-hight">
-				<ul class="sub-menu text-left staffing-sub-menu">
-				   <li  id="about_1"><a href="#">About Us</a></li>
-				   <li id="leadership_1"><a href="#">Leadership</a></li>
-				   <li id="mission_1"><a href="#">Mission &amp; Values </a></li>
-				   <li id="history_1"><a href="#">History</a></li>
-				   <li id="work_1"><a href="#">Work at Judge</a></li>
-				</ul>
-			 </li>
-			 <li class="mega-menu-col col-md-8 text-left">
-				<% menuList.about.forEach(function(data){ %>
-					<%- data.menu_description -%> 
-				  <% }) %>
-			 </li>
-		  </ul>
-		  <!-- end row -->
-	   </div>
-	</li>
-	<li class="dropdown menu-item-has-mega-menu">
-	   <a href="#" class="dropdown-toggle" data-toggle="dropdown">SERVICES</a>
-	   <div class="mega-menu dropdown-menu">
-		  <ul class="mega-menu-row" role="menu">
-			 <li class="mega-menu-col col-md-4 order-3 l-menu-hight">
-				<ul id="accordion" class="sub-menu text-left staffing-sub-menu">
-				   <li class="order-first">
-					  <a href="#" id="judge-staffing">Staffing</a>
-					  <ul class="sub-menu-staffing ml-3">
-						 <li id="staff_dir_1"><a href="#">Direct Placement</a></li>
-						 <li id="staff_it_1"><a href="#">IT</a></li>
-						 <li id="staff_health_1"><a href="#">Healthcare</a></li>
-						 <li id="staff_eng_1"><a href="#">Engineering</a></li>
-						 <li id="staff_fin_1"><a href="#">Finance/HR/Legal</a></li>
-						 <li id="staff_lif_1"><a href="#">Life Science</a></li>
-						 <li id="staff_msp_1"><a href="#">MSP/VMS</a></li>
-						 <li id="staff_rpo_1"><a href="#">RPO</a></li>
-					  </ul>
-				   </li>
-				   <li class="order">
-					  <a href="#" style="background:none;" id="judge-managed">Managed Services</a>
-					  <ul class="sub-menu-managed menu-hide ml-3">
-						 <li id="staff_cus_1"><a href="#">Consulting Services</a></li>
-						 <li id="staff_tech_1"><a href="#">Technology Solutions</a></li>
-						 <li id="staff_learn_1"><a href="#">Learning Solutions</a></li>
-					  </ul>
-				   </li>
-				</ul>
-			 </li>
-			 <li class="mega-menu-col col-md-8 text-left">
-			    <% menuList.staffing.forEach(function(data){ %>
-					<%- data.menu_description -%> 
-				  <% }) %>
-				  
-				 <% menuList.managed_services.forEach(function(data){ %>
-					<%- data.menu_description -%> 
-				  <% }) %>
-				  
-			 </li>
-		  </ul>
-		  <!-- end row -->
-	   </div>
-	</li>
-	<li class="dropdown menu-item-has-mega-menu">
-	   <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES</a>
-	   <div class="mega-menu dropdown-menu">
-		  <ul class="mega-menu-row" role="menu">
-			 <li class="mega-menu-col col-md-4 order-3 l-menu-hight">
-				<ul class="sub-menu text-left staffing-sub-menu">
-				   <li  id="res_blog_1"><a href="#">Blogs</a></li>
-				   <li  id="res_sal_1"><a href="#">Salary Data</a></li>
-				   <li  id="res_per_1"><a href="#">Placement Data (Quarter)</a></li>
-				   <li  id="res_best_1"><a href="#">Interview Best Practices</a></li>
-				   <li  id="res_upcoming_1"><a href="#">Upcoming Webinars</a></li>
-				   <li  id="res_press_1"><a href="#">Press Release</a></li>
-				   <li  id="res_awards_1"><a href="#">Awards &amp; Recognition</a></li>
-				   <li  id="res_case_1"><a href="#">Case Studies</a></li>
-				   <li  id="res_white_1"><a href="#">Whitepapers</a></li>
-				   <li  id="res_news_1"><a href="#">News</a></li>
-				</ul>
-			 </li>
-			 <li class="mega-menu-col col-md-8 text-left">
-				 <% menuList.resources.forEach(function(data){ %>
-					<%- data.menu_description -%> 
-				  <% }) %>
-			 </li>
-		  </ul>
-		  <!-- end row -->
-	   </div>
-	</li>
-	<li class="dropdown menu-item-has-mega-menu">
-	   <a href="#" class="dropdown-toggle" data-toggle="dropdown">INDUSTRIES</a>
-	   <div class="mega-menu dropdown-menu">
-		  <ul class="mega-menu-row" role="menu">
-			 <li class="mega-menu-col col-md-4 order-3 l-menu-hight">
-				<ul class="sub-menu text-left staffing-sub-menu">
-				   <li id="ind_fin_1"><a href="#">Financial Services</a></li>
-				   <li id="ind_health_1"><a href="#">Healthcare</a></li>
-				   <li id="ind_tech_1"><a href="#">Technology/ Communications</a></li>
-				   <li id="ind_bio_1"><a href="#">Biopharma</a></li>
-				   <li id="ind_ene_1"><a href="#">Energy</a></li>
-				   <li id="ind_gov_1"><a href="#">Government</a></li>
-				   <li id="ind_manu_1"><a href="#">Manufacturing</a></li>
-				   <li id="ind_supply_1"><a href="#">Supply Chain</a></li>
-				   <li id="ind_higher_1"><a href="#">Higher Education</a></li>
-				   <li id="ind_hospitality_1"><a href="#">Hospitality</a></li>
-				</ul>
-			 </li>
-			 <li class="mega-menu-col col-md-8 text-left">
-				 <% menuList.industries.forEach(function(data){ %>
-					<%- data.menu_description -%> 
-				  <% }) %>
-			 </li>
-		  </ul>
-		  <!-- end row -->
-	   </div>
-	</li>
-	<li class="dropdown menu-item-has-mega-menu">
-	   <a href="#" class="dropdown-toggle" data-toggle="dropdown">CONTACT US</a>
-	   <div class="mega-menu dropdown-menu">
-		  <ul class="mega-menu-row" role="menu">
-			 <li class="mega-menu-col col-md-4 order-3 l-menu-hight">
-				<ul class="sub-menu text-left staffing-sub-menu">
-				   <li  id="con_office_1"><a href="#">Offices &amp; Locations</a></li>
-				   <li  id="con_inq_1"><a href="#">Inquire Sales</a></li>
-				   <li  id="con_candi_1"><a href="#">Candidate Portal</a></li>
-				</ul>
-			 </li>
-			 <li class="mega-menu-col col-md-8 text-left">
-				<div class="col-md-12 float-left" style="display:none"; id="con_office_1_box">
-				   <div class="col-md-12 float-left mega-menu-heading">Offices &amp; Locations</div>
-				   <div class="col-md-6 float-left menu-inner-text">
-					  With over 48 years of experience in providing technology, talent, and learning solutions. Our services are successfully delivered through a network of more than 35 offices in the United States, Canada, and India.
-					  <br>
-					  <br>
-					  <strong>Quicklinks</strong>
-					  <ul class="quick-links">
-						 <li><a href="#">Staffing Center</a> </li>
-						 <li><a href="#">Technology Center</a> </li>
-						 <li><a href="#">Learning Center</a></li>
-						 <li><a href="#">Offshore Delivery Center</a></li>
-					  </ul>
-				   </div>
-				   <div class="col-md-6 float-left">
-					  <strong class="corporate-hq">Corporate HQ Philadelphia</strong>
-					  <img src="img/offices.jpg" width="100%" alt=""/><br><br> <span class="mega-menu-all-text">
-					  <strong>Global Delivery Center</strong><br>
-					  151 South Warner Rd.<br>
-					  Suite 100<br>
-					  Wayne, PA 19087<br>
-					  P: (610) 667-7700<br>
-					  F: (610) 667-1058<br>
-					  Other: (800) 650-0035</span> 
-				   </div>
+<nav class="sina-nav col-md-9 mobile-sidebar pull-right" data-top="0">
+<div class="">
+	<!-- .sina-nav-header -->
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="" id="navbar-menu">
+		<ul class="sina-menu sina-menu-right" data-in="fadeInLeft" data-out="fadeInOut">
+			<li class="dropdown menu-item-has-mega-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT</a>
+				<div class="mega-menu dropdown-menu">
+					<ul class="mega-menu-row" role="menu">
+						<li class="mega-menu-col col-md-4 order-3 l-menu-hight">
+							<ul class="sub-menu text-left staffing-sub-menu">
+								<li id="about_1"><a href="#">About Us</a>
+								</li>
+								<li id="leadership_1"><a href="#">Leadership</a>
+								</li>
+								<li id="mission_1"><a href="#">Mission &amp; Values </a>
+								</li>
+								<li id="history_1"><a href="#">History</a>
+								</li>
+								<li id="work_1"><a href="#">Work at Judge</a>
+								</li>
+							</ul>
+						</li>
+						<li class="mega-menu-col col-md-8 text-left">
+							<div class="col-md-12 float-left" id="about_1_box" style="display:none">
+								<div class="col-md-12 float-left mega-menu-heading">About Us</div>
+								<div class="col-md-6 float-left menu-inner-text">The Judge Group is a privately owned, leading professional services firm with over 48 years of experience in providing technology, talent, and learning solutions. Our services are successfully delivered through a network of more than 35 offices in the United States, Canada, and India.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Consulting Solutions</a> 
+										</li>
+										<li><a href="#">Technology Solutions</a> 
+										</li>
+										<li><a href="#">Talent Solutions</a>
+										</li>
+										<li><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">What is Judge</strong>
+									<img src="img/aboutus.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">We understand that the work we do has a direct impact on the lives of our clients, contractors, and employees. Our Values shape how we do business and the culture of Judge. </span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="leadership_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Leadership</div>
+								<div class="col-md-6 float-left menu-inner-text">The Judge Group is a privately owned, leading professional services firm with over 48 years of experience in providing technology, talent, and learning solutions. Our services are successfully delivered through a network of more than 35 offices in the United States, Canada, and India.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Consulting Solutions</a> 
+										</li>
+										<li><a href="#">Technology Solutions</a> 
+										</li>
+										<li><a href="#">Talent Solutions</a>
+										</li>
+										<li><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">What is Judge</strong>
+									<img src="img/aboutus.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">We understand that the work we do has a direct impact on the lives of our clients, contractors, and employees. Our Values shape how we do business and the culture of Judge. </span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="mission_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Mission &amp; Values</div>
+								<div class="col-md-6 float-left menu-inner-text">The Judge Group is a privately owned, leading professional services firm with over 48 years of experience in providing technology, talent, and learning solutions. Our services are successfully delivered through a network of more than 35 offices in the United States, Canada, and India.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Consulting Solutions</a> 
+										</li>
+										<li><a href="#">Technology Solutions</a> 
+										</li>
+										<li><a href="#">Talent Solutions</a>
+										</li>
+										<li><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">What is Judge</strong>
+									<img src="img/aboutus.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">We understand that the work we do has a direct impact on the lives of our clients, contractors, and employees. Our Values shape how we do business and the culture of Judge. </span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="history_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">History</div>
+								<div class="col-md-6 float-left menu-inner-text">The Judge Group is a privately owned, leading professional services firm with over 48 years of experience in providing technology, talent, and learning solutions. Our services are successfully delivered through a network of more than 35 offices in the United States, Canada, and India.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Consulting Solutions</a> 
+										</li>
+										<li><a href="#">Technology Solutions</a> 
+										</li>
+										<li><a href="#">Talent Solutions</a>
+										</li>
+										<li><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">What is Judge</strong>
+									<img src="img/aboutus.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">We understand that the work we do has a direct impact on the lives of our clients, contractors, and employees. Our Values shape how we do business and the culture of Judge. </span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="work_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Work at Judge</div>
+								<div class="col-md-6 float-left menu-inner-text">The Judge Group is a privately owned, leading professional services firm with over 48 years of experience in providing technology, talent, and learning solutions. Our services are successfully delivered through a network of more than 35 offices in the United States, Canada, and India.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Consulting Solutions</a> 
+										</li>
+										<li><a href="#">Technology Solutions</a> 
+										</li>
+										<li><a href="#">Talent Solutions</a>
+										</li>
+										<li><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">What is Judge</strong>
+									<img src="img/aboutus.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">We understand that the work we do has a direct impact on the lives of our clients, contractors, and employees. Our Values shape how we do business and the culture of Judge. </span> 
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- end row -->
 				</div>
-				<div class="col-md-12 float-left" style="display:none"; id="con_inq_1_box">
-				   <div class="col-md-12 float-left mega-menu-heading">Inquire Sales</div>
-				   <div class="col-md-6 float-left menu-inner-text">
-					  With over 48 years of experience in providing technology, talent, and learning solutions. Our services are successfully delivered through a network of more than 35 offices in the United States, Canada, and India.
-					  <br>
-					  <br>
-					  <strong>Quicklinks</strong>
-					  <ul class="quick-links">
-						 <li><a href="#">Staffing Center</a> </li>
-						 <li><a href="#">Technology Center</a> </li>
-						 <li><a href="#">Learning Center</a></li>
-						 <li><a href="#">Offshore Delivery Center</a></li>
-					  </ul>
-				   </div>
-				   <div class="col-md-6 float-left">
-					  <strong class="corporate-hq">Corporate HQ Philadelphia</strong>
-					  <img src="img/offices.jpg" width="100%" alt=""/><br><br> <span class="mega-menu-all-text">
-					  <strong>Global Delivery Center</strong><br>
-					  151 South Warner Rd.<br>
-					  Suite 100<br>
-					  Wayne, PA 19087<br>
-					  P: (610) 667-7700<br>
-					  F: (610) 667-1058<br>
-					  Other: (800) 650-0035</span> 
-				   </div>
+			</li>
+			<li class="dropdown menu-item-has-mega-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">SERVICES</a>
+				<div class="mega-menu dropdown-menu">
+					<ul class="mega-menu-row" role="menu">
+						<li class="mega-menu-col col-md-4 order-3 l-menu-hight">
+							<ul id="accordion" class="sub-menu text-left staffing-sub-menu">
+								<li class="order-first"> <a href="#" id="judge-staffing">Staffing</a>
+									<ul class="sub-menu-staffing ml-3">
+										<li id="staff_dir_1"><a href="#">Direct Placement</a>
+										</li>
+										<li id="staff_it_1"><a href="#">IT</a>
+										</li>
+										<li id="staff_health_1"><a href="#">Healthcare</a>
+										</li>
+										<li id="staff_eng_1"><a href="#">Engineering</a>
+										</li>
+										<li id="staff_fin_1"><a href="#">Finance/HR/Legal</a>
+										</li>
+										<li id="staff_lif_1"><a href="#">Life Science</a>
+										</li>
+										<li id="staff_msp_1"><a href="#">MSP/VMS</a>
+										</li>
+										<li id="staff_rpo_1"><a href="#">RPO</a>
+										</li>
+									</ul>
+								</li>
+								<li class="order"> 
+									<a href="#" style="background:none;" id="judge-managed">Consulting Services</a>
+									<ul class="sub-menu-managed menu-hide ml-3">
+										<li id="staff_cus_1"><a href="#">Consulting Services</a>
+										</li>
+										<li id="staff_tech_1"><a href="#">Technology Solutions</a>
+										</li>
+										<li id="staff_learn_1"><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</li>
+								<li class="order"> <a href="#" style="background:none;" id="tech-managed">Technology Solutions</a>
+									<ul class="sub-menu-managed_tech menu-hide ml-3">
+										<li id="staff_techsol_15"><a href="#">Consulting Services</a>
+										</li>
+										<li id="staff_techsol_16"><a href="#">Technology Solutions</a>
+										</li>
+										<li id="staff_techsol_17"><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</li>
+								<li class="order"> <a href="#" style="background:none;" id="learn-managed">Learning Solutions</a>
+									<ul class="sub-menu-managed_learn menu-hide ml-3">
+										<li id="staff_techsol_18"><a href="#">Consulting Services</a>
+										</li>
+										<li id="staff_techsol_19"><a href="#">Technology Solutions</a>
+										</li>
+										<li id="staff_techsol_15"><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="mega-menu-col col-md-8 text-left">
+							<div class="col-md-12 float-left" style="display:none" id="staff_dir_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Direct Placement</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="staff_it_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">IT</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="staff_health_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Healthcare</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="staff_eng_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Engineering</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="staff_fin_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Finance/HR/Legal</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="staff_lif_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Life Science</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="staff_msp_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">MSP/VMS</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="staff_rpo_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">RPO</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="staff_cus_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Consulting Services</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="staff_tech_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Technology Solutions</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="staff_learn_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Learning Solutions</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+						   
+						    <div class="col-md-12 float-left" style="display:none" id="staff_techsol_15_box">
+								<div class="col-md-12 float-left mega-menu-heading">Learning Solutions 12</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+						    <div class="col-md-12 float-left" style="display:none" id="staff_techsol_16_box">
+								<div class="col-md-12 float-left mega-menu-heading">Learning Solutions 16</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="staff_techsol_17_box">
+								<div class="col-md-12 float-left mega-menu-heading">Learning Solutions 17</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+							
+							<div class="col-md-12 float-left" style="display:none" id="staff_techsol_18_box">
+								<div class="col-md-12 float-left mega-menu-heading">Learning Solutions 18</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="staff_techsol_19_box">
+								<div class="col-md-12 float-left mega-menu-heading">Learning Solutions 20</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="staff_techsol_20_box">
+								<div class="col-md-12 float-left mega-menu-heading">Learning Solutions 21</div>
+								<div class="col-md-6 float-left menu-inner-text">Our technology solutions, from network infrastructure and data center to A/V solutions and digital signage, are customized for our clients and geared towards high performance, scalability, availability, and reliability.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Network infrastructure</a> 
+										</li>
+										<li><a href="#">Managed services</a> 
+										</li>
+										<li><a href="#">A/V Collaborative Solutions</a>
+										</li>
+										<li><a href="#">Data Center</a>
+										</li>
+										<li><a href="#">Construction Technology Planning &amp; Design</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Technology Build</strong>
+									<img src="img/managed-services-img.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">A multinational telecommunications conglomerate was covering 1 million sq. ft. of traditional office space to open workspaces, across 7 buildings. They contracted The Judge Group to handle the transformation.</span> 
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- end row -->
 				</div>
-			   <div class="col-md-12 float-left" style="display:none"; id="con_candi_1_box">
-				   <div class="col-md-12 float-left mega-menu-heading">Candidate Portal</div>
-				   <div class="col-md-6 float-left menu-inner-text">
-					  With over 48 years of experience in providing technology, talent, and learning solutions. Our services are successfully delivered through a network of more than 35 offices in the United States, Canada, and India.
-					  <br>
-					  <br>
-					  <strong>Quicklinks</strong>
-					  <ul class="quick-links">
-						 <li><a href="#">Staffing Center</a> </li>
-						 <li><a href="#">Technology Center</a> </li>
-						 <li><a href="#">Learning Center</a></li>
-						 <li><a href="#">Offshore Delivery Center</a></li>
-					  </ul>
-				   </div>
-				   <div class="col-md-6 float-left">
-					  <strong class="corporate-hq">Corporate HQ Philadelphia</strong>
-					  <img src="img/offices.jpg" width="100%" alt=""/><br><br> <span class="mega-menu-all-text">
-					  <strong>Global Delivery Center</strong><br>
-					  151 South Warner Rd.<br>
-					  Suite 100<br>
-					  Wayne, PA 19087<br>
-					  P: (610) 667-7700<br>
-					  F: (610) 667-1058<br>
-					  Other: (800) 650-0035</span> 
-				   </div>
+			</li>
+			<li class="dropdown menu-item-has-mega-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES</a>
+				<div class="mega-menu dropdown-menu">
+					<ul class="mega-menu-row" role="menu">
+						<li class="mega-menu-col col-md-4 order-3 l-menu-hight">
+							<ul class="sub-menu text-left staffing-sub-menu">
+								<li id="res_blog_1"><a href="#">Blogs</a>
+								</li>
+								<li id="res_sal_1"><a href="#">Salary Data</a>
+								</li>
+								<li id="res_per_1"><a href="#">Placement Data (Quarter)</a>
+								</li>
+								<li id="res_best_1"><a href="#">Interview Best Practices</a>
+								</li>
+								<li id="res_upcoming_1"><a href="#">Upcoming Webinars</a>
+								</li>
+								<li id="res_press_1"><a href="#">Press Release</a>
+								</li>
+								<li id="res_awards_1"><a href="#">Awards &amp; Recognition</a>
+								</li>
+								<li id="res_case_1"><a href="#">Case Studies</a>
+								</li>
+								<li id="res_white_1"><a href="#">Whitepapers</a>
+								</li>
+								<li id="res_news_1"><a href="#">News</a>
+								</li>
+							</ul>
+						</li>
+						<li class="mega-menu-col col-md-8 text-left">
+							<div class="col-md-12 float-left" style="display:none" id="res_blog_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Blogs</div>
+								<div class="col-md-6 float-left menu-inner-text">Within our company, with our clients and with our candidates, Judge strives to continue an ongoing conversation - communicating openly and honestly. We've found the best way to foster long-term relationships is through frequent and candid dialogue, especially as today's world is constantly changing.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Recent Blogs</a> 
+										</li>
+										<li><a href="#">Latest Videos</a> 
+										</li>
+										<li><a href="#">Popular Blogs</a> 
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Developing Your Players</strong>
+									<img src="img/jls_blog.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">Wow, the holiday season is over and just about all the Football Bowl games. If you’re like most folks, there were too many to watch or even keep up with. But even if you just watched a couple or maybe you focused on professional football...</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="res_sal_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Salary Data</div>
+								<div class="col-md-6 float-left menu-inner-text">Within our company, with our clients and with our candidates, Judge strives to continue an ongoing conversation - communicating openly and honestly. We've found the best way to foster long-term relationships is through frequent and candid dialogue, especially as today's world is constantly changing.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Recent Blogs</a> 
+										</li>
+										<li><a href="#">Latest Videos</a> 
+										</li>
+										<li><a href="#">Popular Blogs</a> 
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Developing Your Players</strong>
+									<img src="img/jls_blog.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">Wow, the holiday season is over and just about all the Football Bowl games. If you’re like most folks, there were too many to watch or even keep up with. But even if you just watched a couple or maybe you focused on professional football...</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="res_per_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Placement Data (Quarter)</div>
+								<div class="col-md-6 float-left menu-inner-text">Within our company, with our clients and with our candidates, Judge strives to continue an ongoing conversation - communicating openly and honestly. We've found the best way to foster long-term relationships is through frequent and candid dialogue, especially as today's world is constantly changing.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Recent Blogs</a> 
+										</li>
+										<li><a href="#">Latest Videos</a> 
+										</li>
+										<li><a href="#">Popular Blogs</a> 
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Developing Your Players</strong>
+									<img src="img/jls_blog.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">Wow, the holiday season is over and just about all the Football Bowl games. If you’re like most folks, there were too many to watch or even keep up with. But even if you just watched a couple or maybe you focused on professional football...</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="res_best_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Interview Best Practices</div>
+								<div class="col-md-6 float-left menu-inner-text">Within our company, with our clients and with our candidates, Judge strives to continue an ongoing conversation - communicating openly and honestly. We've found the best way to foster long-term relationships is through frequent and candid dialogue, especially as today's world is constantly changing.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Recent Blogs</a> 
+										</li>
+										<li><a href="#">Latest Videos</a> 
+										</li>
+										<li><a href="#">Popular Blogs</a> 
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Developing Your Players</strong>
+									<img src="img/jls_blog.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">Wow, the holiday season is over and just about all the Football Bowl games. If you’re like most folks, there were too many to watch or even keep up with. But even if you just watched a couple or maybe you focused on professional football...</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="res_upcoming_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Upcoming Webinars</div>
+								<div class="col-md-6 float-left menu-inner-text">Within our company, with our clients and with our candidates, Judge strives to continue an ongoing conversation - communicating openly and honestly. We've found the best way to foster long-term relationships is through frequent and candid dialogue, especially as today's world is constantly changing.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Recent Blogs</a> 
+										</li>
+										<li><a href="#">Latest Videos</a> 
+										</li>
+										<li><a href="#">Popular Blogs</a> 
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Developing Your Players</strong>
+									<img src="img/jls_blog.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">Wow, the holiday season is over and just about all the Football Bowl games. If you’re like most folks, there were too many to watch or even keep up with. But even if you just watched a couple or maybe you focused on professional football...</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="res_press_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Press Release</div>
+								<div class="col-md-6 float-left menu-inner-text">Within our company, with our clients and with our candidates, Judge strives to continue an ongoing conversation - communicating openly and honestly. We've found the best way to foster long-term relationships is through frequent and candid dialogue, especially as today's world is constantly changing.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Recent Blogs</a> 
+										</li>
+										<li><a href="#">Latest Videos</a> 
+										</li>
+										<li><a href="#">Popular Blogs</a> 
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Developing Your Players</strong>
+									<img src="img/jls_blog.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">Wow, the holiday season is over and just about all the Football Bowl games. If you’re like most folks, there were too many to watch or even keep up with. But even if you just watched a couple or maybe you focused on professional football...</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="res_awards_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Awards &amp; Recognition</div>
+								<div class="col-md-6 float-left menu-inner-text">Within our company, with our clients and with our candidates, Judge strives to continue an ongoing conversation - communicating openly and honestly. We've found the best way to foster long-term relationships is through frequent and candid dialogue, especially as today's world is constantly changing.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Recent Blogs</a> 
+										</li>
+										<li><a href="#">Latest Videos</a> 
+										</li>
+										<li><a href="#">Popular Blogs</a> 
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Developing Your Players</strong>
+									<img src="img/jls_blog.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">Wow, the holiday season is over and just about all the Football Bowl games. If you’re like most folks, there were too many to watch or even keep up with. But even if you just watched a couple or maybe you focused on professional football...</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="res_case_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Case Studies</div>
+								<div class="col-md-6 float-left menu-inner-text">Within our company, with our clients and with our candidates, Judge strives to continue an ongoing conversation - communicating openly and honestly. We've found the best way to foster long-term relationships is through frequent and candid dialogue, especially as today's world is constantly changing.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Recent Blogs</a> 
+										</li>
+										<li><a href="#">Latest Videos</a> 
+										</li>
+										<li><a href="#">Popular Blogs</a> 
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Developing Your Players</strong>
+									<img src="img/jls_blog.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">Wow, the holiday season is over and just about all the Football Bowl games. If you’re like most folks, there were too many to watch or even keep up with. But even if you just watched a couple or maybe you focused on professional football...</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="res_white_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Whitepapers</div>
+								<div class="col-md-6 float-left menu-inner-text">Within our company, with our clients and with our candidates, Judge strives to continue an ongoing conversation - communicating openly and honestly. We've found the best way to foster long-term relationships is through frequent and candid dialogue, especially as today's world is constantly changing.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Recent Blogs</a> 
+										</li>
+										<li><a href="#">Latest Videos</a> 
+										</li>
+										<li><a href="#">Popular Blogs</a> 
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Developing Your Players</strong>
+									<img src="img/jls_blog.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">Wow, the holiday season is over and just about all the Football Bowl games. If you’re like most folks, there were too many to watch or even keep up with. But even if you just watched a couple or maybe you focused on professional football...</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="res_news_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">News</div>
+								<div class="col-md-6 float-left menu-inner-text">Within our company, with our clients and with our candidates, Judge strives to continue an ongoing conversation - communicating openly and honestly. We've found the best way to foster long-term relationships is through frequent and candid dialogue, especially as today's world is constantly changing.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Recent Blogs</a> 
+										</li>
+										<li><a href="#">Latest Videos</a> 
+										</li>
+										<li><a href="#">Popular Blogs</a> 
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Developing Your Players</strong>
+									<img src="img/jls_blog.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">Wow, the holiday season is over and just about all the Football Bowl games. If you’re like most folks, there were too many to watch or even keep up with. But even if you just watched a couple or maybe you focused on professional football...</span> 
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- end row -->
 				</div>
-			 </li>
-		  </ul>
-	   </div>
-	</li>
-	<li class="dropdown">
-	   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/location-icon-top.png" alt="" class="p-0 m-0"/></a>
-	   <ul class="dropdown-menu places text-left">
-		  <li class="pl-2"><a href="https://www.judge.com/" style="color: #000;">USA - English</a></li>
-		  <li class="pl-2"><a href="https://www.judge.com/?fromUrl=http://www.judgecanada.com/" style="color: #000;">Canada - English</a></li>
-		  <li class="pl-2"><a href="https://www.judge.com/?fromUrl=http://www.judgechina.com/"  style="color: #000;">China - English</a></li>
-	   </ul>
-	</li>
- </ul>
+			</li>
+			<li class="dropdown menu-item-has-mega-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">INDUSTRIES</a>
+				<div class="mega-menu dropdown-menu">
+					<ul class="mega-menu-row" role="menu">
+						<li class="mega-menu-col col-md-4 order-3 l-menu-hight">
+							<ul class="sub-menu text-left staffing-sub-menu">
+								<li id="ind_fin_1"><a href="#">Financial Services</a>
+								</li>
+								<li id="ind_health_1"><a href="#">Healthcare</a>
+								</li>
+								<li id="ind_tech_1"><a href="#">Technology/ Communications</a>
+								</li>
+								<li id="ind_bio_1"><a href="#">Biopharma</a>
+								</li>
+								<li id="ind_ene_1"><a href="#">Energy</a>
+								</li>
+								<li id="ind_gov_1"><a href="#">Government</a>
+								</li>
+								<li id="ind_manu_1"><a href="#">Manufacturing</a>
+								</li>
+								<li id="ind_supply_1"><a href="#">Supply Chain</a>
+								</li>
+								<li id="ind_higher_1"><a href="#">Higher Education</a>
+								</li>
+								<li id="ind_hospitality_1"><a href="#">Hospitality</a>
+								</li>
+							</ul>
+						</li>
+						<li class="mega-menu-col col-md-8 text-left">
+							<div class="col-md-12 float-left" style="display:none" id="ind_fin_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Financial Services</div>
+								<div class="col-md-6 float-left menu-inner-text">The future of Financial Services companies will largely depend on their ability to adapt to the changing regulatory climate and adopt new technologies to stay competitive. New technology, cybersecurity...
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">IT Trends in Financial Services</a>
+										</li>
+										<li><a href="#">Technology Solutions</a>
+										</li>
+										<li><a href="#">Talent Solutions</a>
+										</li>
+										<li><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Financial Services Expertise</strong>
+									<img src="img/financialservicesexpertise.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">The Financial Services industry is complex and ever changing. Judge has the experience to help your organization meet and exceed your goals. </span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="ind_health_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Healthcare</div>
+								<div class="col-md-6 float-left menu-inner-text">The future of Financial Services companies will largely depend on their ability to adapt to the changing regulatory climate and adopt new technologies to stay competitive. New technology, cybersecurity...
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">IT Trends in Financial Services</a>
+										</li>
+										<li><a href="#">Technology Solutions</a>
+										</li>
+										<li><a href="#">Talent Solutions</a>
+										</li>
+										<li><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Financial Services Expertise</strong>
+									<img src="img/financialservicesexpertise.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">The Financial Services industry is complex and ever changing. Judge has the experience to help your organization meet and exceed your goals. </span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="ind_tech_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Technology/ Communications</div>
+								<div class="col-md-6 float-left menu-inner-text">The future of Financial Services companies will largely depend on their ability to adapt to the changing regulatory climate and adopt new technologies to stay competitive. New technology, cybersecurity...
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">IT Trends in Financial Services</a>
+										</li>
+										<li><a href="#">Technology Solutions</a>
+										</li>
+										<li><a href="#">Talent Solutions</a>
+										</li>
+										<li><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Financial Services Expertise</strong>
+									<img src="img/financialservicesexpertise.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">The Financial Services industry is complex and ever changing. Judge has the experience to help your organization meet and exceed your goals. </span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="ind_bio_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Biopharma</div>
+								<div class="col-md-6 float-left menu-inner-text">The future of Financial Services companies will largely depend on their ability to adapt to the changing regulatory climate and adopt new technologies to stay competitive. New technology, cybersecurity...
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">IT Trends in Financial Services</a>
+										</li>
+										<li><a href="#">Technology Solutions</a>
+										</li>
+										<li><a href="#">Talent Solutions</a>
+										</li>
+										<li><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Financial Services Expertise</strong>
+									<img src="img/financialservicesexpertise.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">The Financial Services industry is complex and ever changing. Judge has the experience to help your organization meet and exceed your goals. </span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="ind_ene_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Energy</div>
+								<div class="col-md-6 float-left menu-inner-text">The future of Financial Services companies will largely depend on their ability to adapt to the changing regulatory climate and adopt new technologies to stay competitive. New technology, cybersecurity...
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">IT Trends in Financial Services</a>
+										</li>
+										<li><a href="#">Technology Solutions</a>
+										</li>
+										<li><a href="#">Talent Solutions</a>
+										</li>
+										<li><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Financial Services Expertise</strong>
+									<img src="img/financialservicesexpertise.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">The Financial Services industry is complex and ever changing. Judge has the experience to help your organization meet and exceed your goals. </span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="ind_gov_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Government</div>
+								<div class="col-md-6 float-left menu-inner-text">The future of Financial Services companies will largely depend on their ability to adapt to the changing regulatory climate and adopt new technologies to stay competitive. New technology, cybersecurity...
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">IT Trends in Financial Services</a>
+										</li>
+										<li><a href="#">Technology Solutions</a>
+										</li>
+										<li><a href="#">Talent Solutions</a>
+										</li>
+										<li><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Financial Services Expertise</strong>
+									<img src="img/financialservicesexpertise.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">The Financial Services industry is complex and ever changing. Judge has the experience to help your organization meet and exceed your goals. </span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="ind_manu_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Manufacturing</div>
+								<div class="col-md-6 float-left menu-inner-text">The future of Financial Services companies will largely depend on their ability to adapt to the changing regulatory climate and adopt new technologies to stay competitive. New technology, cybersecurity...
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">IT Trends in Financial Services</a>
+										</li>
+										<li><a href="#">Technology Solutions</a>
+										</li>
+										<li><a href="#">Talent Solutions</a>
+										</li>
+										<li><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Financial Services Expertise</strong>
+									<img src="img/financialservicesexpertise.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">The Financial Services industry is complex and ever changing. Judge has the experience to help your organization meet and exceed your goals. </span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="ind_supply_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Supply Chain</div>
+								<div class="col-md-6 float-left menu-inner-text">The future of Financial Services companies will largely depend on their ability to adapt to the changing regulatory climate and adopt new technologies to stay competitive. New technology, cybersecurity...
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">IT Trends in Financial Services</a>
+										</li>
+										<li><a href="#">Technology Solutions</a>
+										</li>
+										<li><a href="#">Talent Solutions</a>
+										</li>
+										<li><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Financial Services Expertise</strong>
+									<img src="img/financialservicesexpertise.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">The Financial Services industry is complex and ever changing. Judge has the experience to help your organization meet and exceed your goals. </span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="ind_higher_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Higher Education</div>
+								<div class="col-md-6 float-left menu-inner-text">The future of Financial Services companies will largely depend on their ability to adapt to the changing regulatory climate and adopt new technologies to stay competitive. New technology, cybersecurity...
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">IT Trends in Financial Services</a>
+										</li>
+										<li><a href="#">Technology Solutions</a>
+										</li>
+										<li><a href="#">Talent Solutions</a>
+										</li>
+										<li><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Financial Services Expertise</strong>
+									<img src="img/financialservicesexpertise.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">The Financial Services industry is complex and ever changing. Judge has the experience to help your organization meet and exceed your goals. </span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none" id="ind_hospitality_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Hospitality</div>
+								<div class="col-md-6 float-left menu-inner-text">The future of Financial Services companies will largely depend on their ability to adapt to the changing regulatory climate and adopt new technologies to stay competitive. New technology, cybersecurity...
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">IT Trends in Financial Services</a>
+										</li>
+										<li><a href="#">Technology Solutions</a>
+										</li>
+										<li><a href="#">Talent Solutions</a>
+										</li>
+										<li><a href="#">Learning Solutions</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Financial Services Expertise</strong>
+									<img src="img/financialservicesexpertise.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">The Financial Services industry is complex and ever changing. Judge has the experience to help your organization meet and exceed your goals. </span> 
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- end row -->
+				</div>
+			</li>
+			<li class="dropdown menu-item-has-mega-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">CONTACT US</a>
+				<div class="mega-menu dropdown-menu">
+					<ul class="mega-menu-row" role="menu">
+						<li class="mega-menu-col col-md-4 order-3 l-menu-hight">
+							<ul class="sub-menu text-left staffing-sub-menu">
+								<li id="con_office_1"><a href="#">Offices &amp; Locations</a>
+								</li>
+								<li id="con_inq_1"><a href="#">Inquire Sales</a>
+								</li>
+								<li id="con_candi_1"><a href="#">Candidate Portal</a>
+								</li>
+							</ul>
+						</li>
+						<li class="mega-menu-col col-md-8 text-left">
+							<div class="col-md-12 float-left" style="display:none;" id="con_office_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Offices &amp; Locations</div>
+								<div class="col-md-6 float-left menu-inner-text">With over 48 years of experience in providing technology, talent, and learning solutions. Our services are successfully delivered through a network of more than 35 offices in the United States, Canada, and India.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Staffing Center</a> 
+										</li>
+										<li><a href="#">Technology Center</a> 
+										</li>
+										<li><a href="#">Learning Center</a>
+										</li>
+										<li><a href="#">Offshore Delivery Center</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Philadelphia</strong>
+									<img src="img/offices.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">
+							  <strong>Global Delivery Center</strong><br>
+							  151 South Warner Rd.<br>
+							  Suite 100<br>
+							  Wayne, PA 19087<br>
+							  P: (610) 667-7700<br>
+							  F: (610) 667-1058<br>
+							  Other: (800) 650-0035</span> 
+							</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none;" id="con_inq_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Inquire Sales</div>
+								<div class="col-md-6 float-left menu-inner-text">With over 48 years of experience in providing technology, talent, and learning solutions. Our services are successfully delivered through a network of more than 35 offices in the United States, Canada, and India.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Staffing Center</a> 
+										</li>
+										<li><a href="#">Technology Center</a> 
+										</li>
+										<li><a href="#">Learning Center</a>
+										</li>
+										<li><a href="#">Offshore Delivery Center</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Philadelphia</strong>
+									<img src="img/offices.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">
+								  <strong>Global Delivery Center</strong><br>
+								  151 South Warner Rd.<br>
+								  Suite 100<br>
+								  Wayne, PA 19087<br>
+								  P: (610) 667-7700<br>
+								  F: (610) 667-1058<br>
+								  Other: (800) 650-0035</span> 
+								</div>
+							</div>
+							<div class="col-md-12 float-left" style="display:none;" id="con_candi_1_box">
+								<div class="col-md-12 float-left mega-menu-heading">Candidate Portal</div>
+								<div class="col-md-6 float-left menu-inner-text">With over 48 years of experience in providing technology, talent, and learning solutions. Our services are successfully delivered through a network of more than 35 offices in the United States, Canada, and India.
+									<br>
+									<br> <strong>Quicklinks</strong>
+									<ul class="quick-links">
+										<li><a href="#">Staffing Center</a> 
+										</li>
+										<li><a href="#">Technology Center</a> 
+										</li>
+										<li><a href="#">Learning Center</a>
+										</li>
+										<li><a href="#">Offshore Delivery Center</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6 float-left"> <strong class="corporate-hq">Corporate HQ Philadelphia</strong>
+									<img src="img/offices.jpg" width="100%" alt="" />
+									<br>
+									<br> <span class="mega-menu-all-text">
+									  <strong>Global Delivery Center</strong><br>
+									  151 South Warner Rd.<br>
+									  Suite 100<br>
+									  Wayne, PA 19087<br>
+									  P: (610) 667-7700<br>
+									  F: (610) 667-1058<br>
+									  Other: (800) 650-0035</span> 
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<img src="img/location-icon-top.png" alt="" class="p-0 m-0" />
+				</a>
+				<ul class="dropdown-menu places text-left">
+					<li class="pl-2"><a href="https://www.judge.com/" style="color: #000;">USA - English</a>
+					</li>
+					<li class="pl-2"><a href="https://www.judge.com/?fromUrl=http://www.judgecanada.com/" style="color: #000;">Canada - English</a>
+					</li>
+					<li class="pl-2"><a href="https://www.judge.com/?fromUrl=http://www.judgechina.com/" style="color: #000;">China - English</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- /.navbar-collapse -->
 </div>
-<!-- /.navbar-collapse -->
+<!-- .container -->
+</nav>
+

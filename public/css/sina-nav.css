@@ -133,7 +133,7 @@
   position: absolute;
   display: none;
   top: 100%;
-  left: 0;
+  left: -150px;
   z-index: 1000;
 }
 .sina-nav .open > .dropdown-menu {
@@ -219,8 +219,8 @@
 }
 .sina-nav .sina-menu .dropdown-menu li a {
   color: #222;
-  font-size: 1.70rem;
-	line-height: 40px;
+  font-size: 15px!important;
+	line-height: 25px;
   font-family: "Open Sans", sans-serif;
 }
 .sina-nav .sina-menu .dropdown-menu li.active > a,
@@ -255,10 +255,11 @@
   position: static;
 }
 .sina-nav .menu-item-has-mega-menu.dropdown .mega-menu.dropdown-menu {
-  width: 80%;
-  padding: 0;
-  background-color: #fcfcfc;
-	margin-left: 18%;
+ width: 990px;
+    padding: 0;
+    background-color: #fcfcfc;
+    margin-left: 0px;
+    left: -75px;
 }
 .sina-nav .menu-item-has-mega-menu.dropdown .mega-menu-row {
   width: 100%;
@@ -462,11 +463,16 @@
   .sina-nav .sina-menu > .dropdown > .dropdown-toggle {
     padding-right: 20px;
   }
-  .sina-nav .sina-menu > .dropdown > .dropdown-toggle:after {
-    content: "\f107";
+ .sina-nav .dropdown-toggle::after {
+    content: "";
     position: absolute;
-    top: 20px;
-    right: 5px;
+    top: 30px;
+    right: 5px;width: 0; 
+  height: 0; 
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+	 border-top: 4px solid #fff;
+		 
   }
   .sina-nav .sina-menu .dropdown .dropdown-menu {
     box-shadow: 0 0 0;
@@ -813,7 +819,6 @@
   .sina-nav .extension-nav > ul .dropdown > .dropdown-toggle:before {
     display: none;
   }
-
   .sina-nav.mobile-sidebar .navbar-collapse {
     position: fixed;
     overflow-x: hidden;
@@ -874,6 +879,7 @@
     margin-top: 60px;
   }
 }
+
 @media (max-width: 479px) {
   .sina-nav .widget-bar {
     right: -250px;
@@ -923,17 +929,16 @@ ul.places li a{font-size:16px!important; padding:  2px 2px!important;}
 .staffing-sub-menu li a:hover{  background:#003764 url(../img/judge-megamenu-right-arrow.png) no-repeat right center!important; color: #fff!important; font-family: "Open Sans", sans-serif; }
 
 
-.staffing-sub-menu_activeBg a{  background:#003764 url(../img/judge-megamenu-right-arrow.png) no-repeat right center!important; color: #fff!important; font-family: "Open Sans", sans-serif; }
+li a.staffing-sub-menu_activeBg {  background:#003764 url(../img/judge-megamenu-right-arrow.png) no-repeat right center!important; color: #fff!important; font-family: "Open Sans", sans-serif; }
 
-#judge-staffing.staffing-sub-menu_activeBg, #judge-managed.staffing-sub-menu_activeBg{  background:#003764 url(../img/judge-megamenu-right-arrow.png) no-repeat right center!important; color: #fff!important; font-family: "Open Sans", sans-serif; }
-.mega-menu-heading{ font-size: 3vw; color:#003764; font-family: "Open Sans", sans-serif;
+.mega-menu-heading{ font-size: 45px; margin-bottom: 25px; color:#003764; font-family: 'Oswald', sans-serif;
 }
 
-.menu-inner-text{ font-size: 1.1vw; font-family: "Open Sans", sans-serif;}
+.menu-inner-text{ font-size:16px; font-family: "Open Sans", sans-serif;}
 .corporate-hq{ font-size: 1vw; margin-bottom: 10px; display:block; font-family: "Open Sans", sans-serif;
 }
 
-.mega-menu-all-text{ font-size:1vw; font-family: "Open Sans", sans-serif;}
+.mega-menu-all-text{ font-size:16px; font-family: "Open Sans", sans-serif;}
 .quick-links{ width: 100%;}
 .quick-links li{ list-style-type: none; line-height: 20px;}
 .quick-links li a{ font-size: 1.3vw!important; color:#003764!important;}
@@ -943,7 +948,7 @@ ul.places li a{font-size:16px!important; padding:  2px 2px!important;}
 
 
 
-.l-menu-hight{background: #e9edf0; min-height:655px;}
+.l-menu-hight{background: #e9edf0; min-height:510px;}
 
 
 @media only screen and (max-width: 480px) {
@@ -954,3 +959,12 @@ ul.places li a{font-size:16px!important; padding:  2px 2px!important;}
 	
 }
 
+.staffing-sub-menu li #judge-staffing:hover, .staffing-sub-menu li #judge-managed:hover{
+color: #222 !important;
+background: transparent !important;
+}
+
+li .staffing-sub-menu_activeBg a{ background:#003764 url(../img/judge-megamenu-right-arrow.png) no-repeat right center!important; color: #fff!important; font-family: "Open Sans", sans-serif; }
+
+
+.quick-links li a{font-size:18px!important;line-height: 30px!important;}

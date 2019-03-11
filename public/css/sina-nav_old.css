@@ -923,7 +923,7 @@ ul.places li a{font-size:16px!important; padding:  2px 2px!important;}
 .staffing-sub-menu li a:hover{  background:#003764 url(../img/judge-megamenu-right-arrow.png) no-repeat right center!important; color: #fff!important; font-family: "Open Sans", sans-serif; }
 
 
-.staffing-sub-menu_activeBg a{  background:#003764 url(../img/judge-megamenu-right-arrow.png) no-repeat right center!important; color: #fff!important; font-family: "Open Sans", sans-serif; }
+.staffing-sub-menu_activeBg a{ background:#003764 url(../img/judge-megamenu-right-arrow.png) no-repeat right center!important; color: #fff!important; font-family: "Open Sans", sans-serif; }
 
 .mega-menu-heading{ font-size: 3vw; color:#003764; font-family: "Open Sans", sans-serif;
 }

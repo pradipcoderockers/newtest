@@ -56,7 +56,7 @@ module.exports = function(app, passport) {
 	app.get('/',menuListeMiddleware, function(req, res,next) {
 		
 		
-		CMSSchemaModal.findOne({'type':'about-us'}, function(err, pageData)
+		CMSSchemaModal.findOne({'type':'home'}, function(err, pageData)
 			{
 				if (err){
 					   
@@ -70,23 +70,6 @@ module.exports = function(app, passport) {
 			});
 	});
 	
-	app.get('/consulting',menuListeMiddleware, function(req, res,next) {
-		
-		
-		CMSSchemaModal.findOne({'type':'about-us'}, function(err, pageData)
-			{
-				if (err){
-					   
-						res.render('consulting.ejs',{menuList:req.menu,pageData:err});
-					}
-					else
-					{
-						res.render('consulting.ejs',{menuList:req.menu,pageData:pageData});
-					}
-				
-			});
-	});
-	
 	app.get('/:type',menuListeMiddleware, function(req, res) {
 	    if(req.params)
 	    {
@@ -94,11 +77,11 @@ module.exports = function(app, passport) {
 			{
 				if (err){
 					   
-						res.render('home.ejs',{menuList:req.menu,pageData:err});
+						res.render('index.ejs',{menuList:req.menu,pageData:err});
 					}
 					else
 					{ 
-						res.render('common.ejs',{menuList:req.menu,pageData:pageData});
+						res.render('index.ejs',{menuList:req.menu,pageData:pageData});
 					}
 				
 			});
