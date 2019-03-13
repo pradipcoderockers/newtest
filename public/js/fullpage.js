@@ -8,7 +8,7 @@
  *
  * Copyright (C) 2018 http://alvarotrigo.com/fullPage - A project by Alvaro Trigo
  */
-(function( root, window, document, factory, undefined) {
+ (function( root, window, document, factory, undefined) {
     if( typeof define === 'function' && define.amd ) {
         // AMD. Register as an anonymous module.
         define( function() {
@@ -24,7 +24,12 @@
     }
 }(this, window, document, function(window, document){
     'use strict';
-
+    var sliderOn = true;
+    var mobileDetector = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent.toLowerCase()));
+    if(mobileDetector)
+    {
+		var sliderOn = false;
+	}
     // keeping central set of classnames and selectors
     var WRAPPER =               'fullpage-wrapper';
     var WRAPPER_SEL =           '.' + WRAPPER;
@@ -119,7 +124,7 @@
             //scrolling
             css3: true,
             scrollingSpeed: 700,
-            autoScrolling: true,
+            autoScrolling: sliderOn,
             fitToSection: true,
             fitToSectionDelay: 1000,
             easing: 'easeInOutCubic',
