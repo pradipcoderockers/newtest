@@ -372,7 +372,7 @@ $(function () {
 						 $('#staff_dir_1_box').show();
 						 $("#judge-staffing").addClass('staffing-sub-menu_activeBg');
 						 $('#staff_dir_1').addClass('staffing-sub-menu_activeBg');
-						 $('#staff_dir_1').add('#staff_it_1').add('#staff_health_1').add('#staff_eng_1').add('#staff_fin_1').add('#staff_lif_1').add('#staff_msp_1').add('#staff_rpo_1').add('#staff_cus_1').add('#staff_tech_1').add('#staff_learn_1').add("#staff_techsol_15").add("#staff_techsol_16").add("#staff_techsol_17").add("#staff_techsol_18").add("#staff_techsol_19").add("#staff_techsol_20").on('mouseover', function(){
+						 $('#staff_dir_1').add('#staff_it_1').add('#staff_health_1').add('#staff_eng_1').add('#staff_fin_1').add('#staff_lif_1').add('#staff_msp_1').add('#staff_rpo_1').add('#staff_cus_1').add('#staff_tech_1').add('#staff_learn_1').add("#staff_techsol_15").add("#staff_techsol_16").add("#staff_techsol_17").add("#staff_techsol_18").add("#staff_techsol_19").add("#staff_techsol_20").add("#staff_techsol_21").add("#staff_techsol_22").add("#staff_techsol_23").add("#staff_techsol_24").add("#staff_techsol_25").add("#staff_techsol_26").add("#staff_techsol_27").add("#staff_techsol_28").add("#staff_techsol_29").add("#staff_techsol_30").add("#staff_techsol_31").add("#staff_techsol_32").add("#staff_techsol_33").add("#staff_techsol_34").add("#staff_techsol_35").add("#staff_techsol_36").add("#staff_techsol_36").add("#staff_techsol_37").add("#staff_techsol_38").add("#staff_techsol_39").add("#staff_techsol_40").add("#staff_techsol_41").add("#staff_techsol_42").add("#staff_techsol_43").on('mouseover', function(){
 					      var id = $(this).attr('id');
 					     
 					      $('#staff_dir_1_box').hide();
@@ -396,6 +396,32 @@ $(function () {
 					      $('#staff_techsol_19_box').hide();
 					      $('#staff_techsol_20_box').hide();
 					      
+					       $('#staff_techsol_21_box').hide();
+						  $('#staff_techsol_22_box').hide();
+						  $('#staff_techsol_23_box').hide();
+						  
+						  $('#staff_techsol_24_box').hide();
+						  $('#staff_techsol_25_box').hide();
+						  $('#staff_techsol_26_box').hide();
+						  
+						  $('#staff_techsol_27_box').hide();
+						  $('#staff_techsol_28_box').hide();
+						  $('#staff_techsol_29_box').hide();
+						  $('#staff_techsol_30_box').hide();
+						  $('#staff_techsol_31_box').hide();
+						  $('#staff_techsol_32_box').hide();
+						  $('#staff_techsol_33_box').hide();
+						  $('#staff_techsol_34_box').hide();
+						  $('#staff_techsol_35_box').hide();
+						  $('#staff_techsol_36_box').hide();
+						  $('#staff_techsol_37_box').hide();
+						  $('#staff_techsol_38_box').hide();
+						  $('#staff_techsol_39_box').hide();
+						  $('#staff_techsol_40_box').hide();
+						  $('#staff_techsol_41_box').hide();
+						  $('#staff_techsol_42_box').hide();
+						  $('#staff_techsol_43_box').hide();
+					      
 					      $('#staff_dir_1').removeClass('staffing-sub-menu_activeBg');
 					      $('#staff_lif_1').removeClass('staffing-sub-menu_activeBg');
 					      $('#staff_health_1').removeClass('staffing-sub-menu_activeBg');
@@ -417,6 +443,31 @@ $(function () {
 					      $('#staff_techsol_18').removeClass('staffing-sub-menu_activeBg');
 					      $('#staff_techsol_19').removeClass('staffing-sub-menu_activeBg');
 					      $('#staff_techsol_20').removeClass('staffing-sub-menu_activeBg');
+					      
+					      $('#staff_techsol_21').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_22').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_23').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_24').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_25').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_26').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_27').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_28').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_29').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_30').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_31').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_32').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_33').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_34').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_35').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_36').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_37').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_38').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_39').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_40').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_41').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_42').removeClass('staffing-sub-menu_activeBg');
+					      $('#staff_techsol_43').removeClass('staffing-sub-menu_activeBg');
+					     
 					      
 					      $('#'+id).show().addClass('staffing-sub-menu_activeBg');
 						  $('#'+id+"_box").show() 
@@ -451,6 +502,33 @@ $(function () {
 								  $('#staff_techsol_18_box').hide();
 								  $('#staff_techsol_19_box').hide();
 								  $('#staff_techsol_20_box').hide();
+								  
+								  $('#staff_techsol_21_box').hide();
+								  $('#staff_techsol_22_box').hide();
+								  $('#staff_techsol_23_box').hide();
+								  
+								  $('#staff_techsol_24_box').hide();
+								  $('#staff_techsol_25_box').hide();
+								  $('#staff_techsol_26_box').hide();
+								  
+								  $('#staff_techsol_27_box').hide();
+								  $('#staff_techsol_28_box').hide();
+								  $('#staff_techsol_29_box').hide();
+								  $('#staff_techsol_30_box').hide();
+								  $('#staff_techsol_31_box').hide();
+								  $('#staff_techsol_32_box').hide();
+								  $('#staff_techsol_33_box').hide();
+								  $('#staff_techsol_34_box').hide();
+								  $('#staff_techsol_35_box').hide();
+								  $('#staff_techsol_36_box').hide();
+								  $('#staff_techsol_37_box').hide();
+								  $('#staff_techsol_38_box').hide();
+								  $('#staff_techsol_39_box').hide();
+								  $('#staff_techsol_40_box').hide();
+								  $('#staff_techsol_41_box').hide();
+								  $('#staff_techsol_42_box').hide();
+								  $('#staff_techsol_43_box').hide();
+								 
 								
 								 $('#staff_cus_1_box').show(); 
 								 $('.sub-menu-managed').removeClass('menu-hide'); 
@@ -486,6 +564,32 @@ $(function () {
 								  $('#staff_techsol_18_box').hide();
 								  $('#staff_techsol_19_box').hide();
 								  $('#staff_techsol_20_box').hide();
+								   $('#staff_techsol_21_box').hide();
+								  $('#staff_techsol_22_box').hide();
+								  $('#staff_techsol_23_box').hide();
+								  
+								  $('#staff_techsol_24_box').hide();
+								  $('#staff_techsol_25_box').hide();
+								  $('#staff_techsol_26_box').hide();
+								  
+								  $('#staff_techsol_27_box').hide();
+								  $('#staff_techsol_28_box').hide();
+								  $('#staff_techsol_29_box').hide();
+								  $('#staff_techsol_30_box').hide();
+								  $('#staff_techsol_31_box').hide();
+								  $('#staff_techsol_32_box').hide();
+								  $('#staff_techsol_33_box').hide();
+								  $('#staff_techsol_34_box').hide();
+								  $('#staff_techsol_35_box').hide();
+								  $('#staff_techsol_36_box').hide();
+								  $('#staff_techsol_37_box').hide();
+								  $('#staff_techsol_38_box').hide();
+								  $('#staff_techsol_39_box').hide();
+								  $('#staff_techsol_40_box').hide();
+								  $('#staff_techsol_41_box').hide();
+								  $('#staff_techsol_42_box').hide();
+								  $('#staff_techsol_43_box').hide();
+								  
 								  $('#staff_dir_1_box').show();
 								 
 								 $('.sub-menu-managed').addClass('menu-hide'); 
@@ -521,6 +625,31 @@ $(function () {
 								  $('#staff_techsol_18_box').hide();
 								  $('#staff_techsol_19_box').hide();
 								  $('#staff_techsol_20_box').hide();
+								   $('#staff_techsol_21_box').hide();
+								  $('#staff_techsol_22_box').hide();
+								  $('#staff_techsol_23_box').hide();
+								  
+								  $('#staff_techsol_24_box').hide();
+								  $('#staff_techsol_25_box').hide();
+								  $('#staff_techsol_26_box').hide();
+								  
+								  $('#staff_techsol_27_box').hide();
+								  $('#staff_techsol_28_box').hide();
+								  $('#staff_techsol_29_box').hide();
+								  $('#staff_techsol_30_box').hide();
+								  $('#staff_techsol_31_box').hide();
+								  $('#staff_techsol_32_box').hide();
+								  $('#staff_techsol_33_box').hide();
+								  $('#staff_techsol_34_box').hide();
+								  $('#staff_techsol_35_box').hide();
+								  $('#staff_techsol_36_box').hide();
+								  $('#staff_techsol_37_box').hide();
+								  $('#staff_techsol_38_box').hide();
+								  $('#staff_techsol_39_box').hide();
+								  $('#staff_techsol_40_box').hide();
+								  $('#staff_techsol_41_box').hide();
+								  $('#staff_techsol_42_box').hide();
+								  $('#staff_techsol_43_box').hide();
 								
 								 $('#staff_techsol_15_box').show();
 								 $('.sub-menu-managed').addClass('menu-hide'); 
@@ -557,6 +686,31 @@ $(function () {
 								  $('#staff_techsol_18_box').hide();
 								  $('#staff_techsol_19_box').hide();
 								  $('#staff_techsol_20_box').hide();
+								   $('#staff_techsol_21_box').hide();
+								  $('#staff_techsol_22_box').hide();
+								  $('#staff_techsol_23_box').hide();
+								  
+								  $('#staff_techsol_24_box').hide();
+								  $('#staff_techsol_25_box').hide();
+								  $('#staff_techsol_26_box').hide();
+								  
+								  $('#staff_techsol_27_box').hide();
+								  $('#staff_techsol_28_box').hide();
+								  $('#staff_techsol_29_box').hide();
+								  $('#staff_techsol_30_box').hide();
+								  $('#staff_techsol_31_box').hide();
+								  $('#staff_techsol_32_box').hide();
+								  $('#staff_techsol_33_box').hide();
+								  $('#staff_techsol_34_box').hide();
+								  $('#staff_techsol_35_box').hide();
+								  $('#staff_techsol_36_box').hide();
+								  $('#staff_techsol_37_box').hide();
+								  $('#staff_techsol_38_box').hide();
+								  $('#staff_techsol_39_box').hide();
+								  $('#staff_techsol_40_box').hide();
+								  $('#staff_techsol_41_box').hide();
+								  $('#staff_techsol_42_box').hide();
+								  $('#staff_techsol_43_box').hide();
 								  
 								 $('#staff_techsol_18_box').show();
 								 $('.sub-menu-managed').addClass('menu-hide'); 
